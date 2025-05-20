@@ -5,7 +5,7 @@ const server = express();
 const PORT = process.env.PORT || 3000;
 
 server.get("/", (req, res)=>{
-    res.status(200).send("Primeira Rota do Backend - Alterado");
+    res.status(200).send("Primeira Rota do Backend");
 });
 
 server.listen(PORT, () => {
