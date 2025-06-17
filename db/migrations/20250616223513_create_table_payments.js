@@ -5,7 +5,7 @@
 export function up(knex) {
   return knex.schema.createTable('payments', function(table) {
     table.increments('id').primary();
-    table.integer('user_id').notNullable().comment('Quem realizou o pagamento');
+    table.integer('user_id').notNullable().comment('quem realizou o pagamento');
     table.integer('user_control').comment('usuário que criou o registro');
     table.float('value').notNullable();
     table.text('receipt').notNullable();
