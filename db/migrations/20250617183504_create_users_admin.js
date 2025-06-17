@@ -11,5 +11,5 @@ export async function up(knex) {
  * @returns { Promise<void> }
  */
 export function down(knex) {
-  
+ 
 }
